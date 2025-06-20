@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio Fotográfico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>@HomeSickAlien_x</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#galeria">Galería</a>
+    </nav>
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un fotógrafo documental apasionado por capturar la esencia del litoral tamaulipeco, la vida cotidiana y lo invisible. A través de mis imágenes exploro identidad, memoria y territorio.
+    </p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="grid">
+      <img src="imagenes/foto1.jpg" alt="Foto 1" />
+      <img src="imagenes/foto2.jpg" alt="Foto 2" />
+      <img src="imagenes/foto3.jpg" alt="Foto 3" />
+    </div>
+  </section>
+
+  <footer>
+    <p>Sígueme:</p>
+    <div class="redes">
+      <a href="https://www.instagram.com/homesickalien_x" target="_blank">Instagram</a>
+      <a href="https://www.pexels.com/@homesickalien_x" target="_blank">Pexels</a>
+    </div>
+  </footer>
+</body>
+</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #cccccc;
+}
+
+.redes a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555555;
+}
+
 
